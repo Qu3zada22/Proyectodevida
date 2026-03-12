@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --background: #1E1E24;
+  --foreground: #FFF8F0;
+  --border: #3a3a44;
+  --ring: #92140C;
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --font-mono: 'Orbitron', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    border-color: #3a3a44;
+  }
+  body {
+    background-color: #1E1E24;
+    color: #FFF8F0;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
