@@ -23,13 +23,15 @@ export function HeroSection() {
 
       <div className="relative z-10 text-center max-w-4xl mx-auto">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8" style={{ backgroundColor: 'rgba(17,29,74,0.5)', border: '1px solid #3a3a44' }}>
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8"
+          style={{ backgroundColor: 'rgba(17,29,74,0.5)', border: '1px solid #3a3a44' }}>
           <span className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: '#92140C' }} />
           <span className="text-sm font-medium" style={{ color: '#FFCF99' }}>APDE El Roble • 5to A • 2025</span>
         </div>
 
         {/* Name */}
-        <h1 className="text-5xl sm:text-7xl font-black mb-4" style={{ fontFamily: 'Orbitron, sans-serif', color: '#FFF8F0' }}>
+        <h1 className="text-5xl sm:text-7xl font-black mb-4"
+          style={{ fontFamily: 'Orbitron, sans-serif', color: '#FFF8F0' }}>
           BYRON
           <span className="block" style={{ color: '#92140C' }}>CARRILLO</span>
         </h1>
@@ -38,7 +40,8 @@ export function HeroSection() {
           Proyecto de Vida
         </p>
 
-        <p className="text-lg max-w-2xl mx-auto mb-8 leading-relaxed" style={{ color: 'rgba(255,248,240,0.7)' }}>
+        <p className="text-lg max-w-2xl mx-auto mb-8 leading-relaxed"
+          style={{ color: 'rgba(255,248,240,0.7)' }}>
           Un viaje hacia el futuro, construyendo sueños con determinación,
           constancia y la fortaleza de seguir adelante sin importar los golpes de la vida.
         </p>
@@ -50,22 +53,22 @@ export function HeroSection() {
             { icon: <Dumbbell className="w-5 h-5" style={{ color: '#92140C' }} />, label: "Boxeo & Gym" },
             { icon: <Bot className="w-5 h-5" style={{ color: '#FFCF99' }} />, label: "Tecnología" },
           ].map((item) => (
-            <div key={item.label} className="flex items-center gap-2 px-4 py-2 rounded-lg" style={{ backgroundColor: '#111D4A', border: '1px solid #3a3a44' }}>
+            <div key={item.label} className="flex items-center gap-2 px-4 py-2 rounded-lg"
+              style={{ backgroundColor: '#111D4A', border: '1px solid #3a3a44' }}>
               {item.icon}
               <span className="text-sm" style={{ color: '#FFF8F0' }}>{item.label}</span>
             </div>
           ))}
         </div>
 
-        {/* Photo placeholder */}
-        <div className="w-48 h-48 sm:w-56 sm:h-56 mx-auto rounded-full flex items-center justify-center mb-8 overflow-hidden"
-          style={{ border: '4px solid #92140C', backgroundColor: '#111D4A' }}>
-          <div className="text-center">
-            <div className="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-2" style={{ backgroundColor: '#3a3a44' }}>
-              <span className="text-3xl" style={{ color: 'rgba(255,248,240,0.5)' }}>BC</span>
-            </div>
-            <span className="text-xs" style={{ color: 'rgba(255,248,240,0.5)' }}>Tu foto aquí</span>
-          </div>
+        {/* Photo */}
+        <div className="w-48 h-48 sm:w-56 sm:h-56 mx-auto rounded-full mb-8 overflow-hidden"
+          style={{ border: '4px solid #92140C' }}>
+          <img
+            src="/foto-hero.jpeg"
+            alt="Byron Carrillo"
+            className="w-full h-full object-cover"
+          />
         </div>
 
         <button

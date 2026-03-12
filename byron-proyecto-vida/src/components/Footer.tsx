@@ -1,4 +1,4 @@
-import { Shield, Heart } from "lucide-react"
+import { Shield } from "lucide-react"
 
 export function Footer() {
   return (
@@ -28,9 +28,7 @@ export function Footer() {
             <span>2025</span>
           </div>
 
-          <p className="text-xs flex items-center gap-1" style={{ color: 'rgba(255,248,240,0.3)' }}>
-            Hecho con <Heart className="w-3 h-3" style={{ color: '#92140C' }} /> para el Proyecto de Vida
-          </p>
+
         </div>
       </div>
     </footer>

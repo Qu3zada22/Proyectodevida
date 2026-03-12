@@ -26,19 +26,17 @@ export function LogotipoSection() {
           <div className="relative">
             <div className="aspect-square max-w-md mx-auto rounded-2xl p-8 flex items-center justify-center"
               style={{ backgroundColor: '#111D4A', border: '1px solid #3a3a44' }}>
-              <div className="text-center">
-                {/* REEMPLAZA ESTE DIV CON TU IMAGEN */}
-                {/* <img src="/logotipo.png" alt="Mi logotipo" className="w-full h-full object-contain" /> */}
-                <div className="w-40 h-40 mx-auto rounded-xl flex items-center justify-center mb-4"
-                  style={{ backgroundColor: '#1E1E24', border: '2px dashed #3a3a44' }}>
-                  <span className="text-sm" style={{ color: 'rgba(255,248,240,0.3)' }}>Imagen del logotipo</span>
-                </div>
-                <p className="text-xs" style={{ color: 'rgba(255,248,240,0.4)' }}>Coloca aquí tu logotipo</p>
-              </div>
+              <img
+                src="/logotipo.jpeg"
+                alt="Mi logotipo"
+                className="w-full h-full object-contain"
+              />
             </div>
             {/* Decorative corners */}
-            <div className="absolute -top-4 -right-4 w-8 h-8" style={{ borderTop: '2px solid #92140C', borderRight: '2px solid #92140C' }} />
-            <div className="absolute -bottom-4 -left-4 w-8 h-8" style={{ borderBottom: '2px solid #FFCF99', borderLeft: '2px solid #FFCF99' }} />
+            <div className="absolute -top-4 -right-4 w-8 h-8"
+              style={{ borderTop: '2px solid #92140C', borderRight: '2px solid #92140C' }} />
+            <div className="absolute -bottom-4 -left-4 w-8 h-8"
+              style={{ borderBottom: '2px solid #FFCF99', borderLeft: '2px solid #FFCF99' }} />
           </div>
 
           {/* Explanations */}

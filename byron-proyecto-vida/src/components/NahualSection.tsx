@@ -1,4 +1,4 @@
-import { Users, Shield, Sparkles, Heart } from "lucide-react"
+import { Users, Shield, Heart } from "lucide-react"
 
 export function NahualSection() {
   return (
@@ -43,21 +43,22 @@ export function NahualSection() {
                 </div>
               </div>
 
-              {/* Glyph placeholder */}
-              <div className="w-40 h-40 mx-auto rounded-2xl flex items-center justify-center mt-6"
-                style={{ backgroundColor: '#1E1E24', border: '2px dashed #3a3a44' }}>
-                {/* REEMPLAZA CON IMAGEN DEL GLIFO:
-                    <img src="/kawoq.png" alt="Glifo KAWOQ" className="w-full h-full object-contain p-4" /> */}
-                <div className="text-center">
-                  <Sparkles className="w-10 h-10 mx-auto mb-2" style={{ color: 'rgba(255,207,153,0.3)' }} />
-                  <span className="text-xs" style={{ color: 'rgba(255,248,240,0.3)' }}>Glifo de KAWOQ</span>
-                </div>
+              {/* Glyph image */}
+              <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden mt-6"
+                style={{ border: '1px solid #3a3a44' }}>
+                <img
+                  src="/kawoq.jpeg"
+                  alt="Glifo KAWOQ"
+                  className="w-full h-full object-contain p-2"
+                  style={{ backgroundColor: '#1E1E24' }}
+                />
               </div>
             </div>
 
             {/* Info cards */}
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="p-6 rounded-2xl" style={{ backgroundColor: 'rgba(30,30,36,0.5)', border: '1px solid #3a3a44' }}>
+              <div className="p-6 rounded-2xl"
+                style={{ backgroundColor: 'rgba(30,30,36,0.5)', border: '1px solid #3a3a44' }}>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-lg flex items-center justify-center"
                     style={{ backgroundColor: 'rgba(146,20,12,0.2)' }}>
@@ -74,7 +75,8 @@ export function NahualSection() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-2xl" style={{ backgroundColor: 'rgba(30,30,36,0.5)', border: '1px solid #3a3a44' }}>
+              <div className="p-6 rounded-2xl"
+                style={{ backgroundColor: 'rgba(30,30,36,0.5)', border: '1px solid #3a3a44' }}>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-lg flex items-center justify-center"
                     style={{ backgroundColor: 'rgba(255,207,153,0.2)' }}>

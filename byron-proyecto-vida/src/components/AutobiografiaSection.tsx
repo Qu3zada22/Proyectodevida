@@ -1,4 +1,4 @@
-import { User, Users, Heart, Calendar, MapPin, GraduationCap, Gamepad2, Dumbbell, ChefHat } from "lucide-react"
+import { Users, Heart, Calendar, MapPin, GraduationCap, Gamepad2, Dumbbell, ChefHat } from "lucide-react"
 
 export function AutobiografiaSection() {
   return (
@@ -26,22 +26,17 @@ export function AutobiografiaSection() {
 
               {/* Photo */}
               <div className="aspect-[3/4] rounded-2xl overflow-hidden"
-                style={{ backgroundColor: '#111D4A', border: '1px solid #3a3a44' }}>
-                {/* REEMPLAZA CON TU FOTO:
-                    <img src="/foto-personal.jpg" alt="Byron" className="w-full h-full object-cover" /> */}
-                <div className="w-full h-full flex items-center justify-center">
-                  <div className="text-center p-4">
-                    <div className="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4"
-                      style={{ backgroundColor: '#1E1E24', border: '2px dashed #3a3a44' }}>
-                      <User className="w-12 h-12" style={{ color: 'rgba(255,248,240,0.3)' }} />
-                    </div>
-                    <span className="text-xs" style={{ color: 'rgba(255,248,240,0.4)' }}>Foto personal aquí</span>
-                  </div>
-                </div>
+                style={{ border: '1px solid #3a3a44' }}>
+                <img
+                  src="/foto-personal.jpeg"
+                  alt="Byron Carrillo"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Quick info */}
-              <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(17,29,74,0.5)', border: '1px solid #3a3a44' }}>
+              <div className="p-4 rounded-xl"
+                style={{ backgroundColor: 'rgba(17,29,74,0.5)', border: '1px solid #3a3a44' }}>
                 <div className="space-y-3">
                   {[
                     { icon: <Calendar className="w-4 h-4" style={{ color: '#FFCF99' }} />, text: '11 de marzo de 2009' },
@@ -63,7 +58,8 @@ export function AutobiografiaSection() {
           <div className="lg:col-span-2 space-y-8">
 
             {/* Familia */}
-            <div className="p-6 rounded-2xl" style={{ backgroundColor: 'rgba(17,29,74,0.3)', border: '1px solid #3a3a44' }}>
+            <div className="p-6 rounded-2xl"
+              style={{ backgroundColor: 'rgba(17,29,74,0.3)', border: '1px solid #3a3a44' }}>
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-lg flex items-center justify-center"
                   style={{ backgroundColor: 'rgba(146,20,12,0.2)' }}>
@@ -84,16 +80,23 @@ export function AutobiografiaSection() {
                 mis abuelos y mis primos. En especial, tengo un primo con quien me llevo muy bien
                 y que considero prácticamente como un hermano.
               </p>
-              {/* Foto familiar — REEMPLAZA */}
-              <div className="mt-4 p-4 rounded-xl" style={{ backgroundColor: '#1E1E24', border: '2px dashed #3a3a44' }}>
-                <div className="aspect-video flex items-center justify-center">
-                  <span className="text-sm" style={{ color: 'rgba(255,248,240,0.3)' }}>Foto familiar aquí</span>
+
+              {/* Foto familiar */}
+              <div className="mt-4 rounded-xl overflow-hidden"
+                style={{ border: '1px solid #3a3a44' }}>
+                <div className="aspect-video">
+                  <img
+                    src="/foto-familia.jpeg"
+                    alt="Familia Carrillo"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
 
             {/* Infancia */}
-            <div className="p-6 rounded-2xl" style={{ backgroundColor: 'rgba(17,29,74,0.3)', border: '1px solid #3a3a44' }}>
+            <div className="p-6 rounded-2xl"
+              style={{ backgroundColor: 'rgba(17,29,74,0.3)', border: '1px solid #3a3a44' }}>
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-lg flex items-center justify-center"
                   style={{ backgroundColor: 'rgba(255,207,153,0.2)' }}>
@@ -133,7 +136,8 @@ export function AutobiografiaSection() {
             </div>
 
             {/* Actualmente */}
-            <div className="p-6 rounded-2xl" style={{ backgroundColor: 'rgba(17,29,74,0.3)', border: '1px solid #3a3a44' }}>
+            <div className="p-6 rounded-2xl"
+              style={{ backgroundColor: 'rgba(17,29,74,0.3)', border: '1px solid #3a3a44' }}>
               <h3 className="text-xl font-bold mb-4" style={{ color: '#FFF8F0' }}>Actualmente</h3>
               <p className="leading-relaxed mb-6" style={{ color: 'rgba(255,248,240,0.7)' }}>
                 Me considero una persona algo reservada, especialmente con personas nuevas, aunque
